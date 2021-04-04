@@ -1,0 +1,18 @@
+.payment-history-section {
+    margin: 1.5rem 0;
+}
+
+.payment-details-table {
+    width: 100%;
+    font-size: calc(.85rem + .15vw);
+
+    thead th {
+        text-align: left;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: var(--color-light-grey);
+    }
+}
+
+.no-payments { text-align: center; }

@@ -1,0 +1,18 @@
+.payment-summary-section {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-light-grey);
+    border-radius: .5rem;
+    white-space: nowrap;
+
+    .detail-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--primary-font-color);
+
+        &:last-child {border-bottom: none;}
+        &.total { font-weight: bold; }
+    }
+}

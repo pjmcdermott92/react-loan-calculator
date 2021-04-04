@@ -1,0 +1,75 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { font-size: var(--base-font-size); scroll-behavior: smooth; }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+    background-color: var(--bg-color);
+    color: var(--primary-font-color);
+}
+
+h1, h2, h3 {
+    margin: .5rem 0;
+    padding: 0;
+    font-family: var(--secondary-font);
+    color: var(--secondary-font-color);
+}
+
+h1.title {
+    font-family: var(--title-font);
+    font-size: calc(2.5rem + 1vw);
+    color: var(--color-primary);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-section {
+    margin: 3rem 0 0;
+    padding: 0 .5rem;
+    
+    p { font-size: calc(1.1rem + .5vw); }
+}
+
+.calculator-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.loan-information-section {
+    width: 100%;
+    max-width: 650px;
+}
+
+.loan-details-wrapper {
+    width: 100%;
+    max-width: 625px;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--color-white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.loan-details-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payments-section {
+    width: 100%;
+    max-width: 515px;
+    margin: 1rem .5rem;
+
+    &[data-active=false] {
+        opacity: .15;
+        user-select: none;
+    }
+}

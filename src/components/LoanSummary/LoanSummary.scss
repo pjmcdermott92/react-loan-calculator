@@ -1,0 +1,70 @@
+.edit-loan-btn {
+    border: 2px solid transparent;
+    background: transparent;
+    font-size: inherit;
+    color: var(--color-primary);
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    transition: 250ms;
+
+    &:hover, &:focus {
+        border-bottom-color: var(--color-primary);
+    }
+}
+
+.loan-details-summary {
+    font-weight: 700;
+    color: var(--light-font-color);
+}
+
+.loan-stats-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0 2rem;
+}
+
+.loan-stat-card {
+    margin: .5rem 0;
+    padding: 0 .25rem;
+    text-align: center;
+    
+    .stat-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+        height: 3rem;
+    }
+
+    .stat-info {
+        padding: 1rem 0;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .subtext {
+        font-size: .85rem;
+        font-style: italic;
+        width: 90%;
+    }
+}
+
+.tooltip {
+    margin-bottom: 2rem;
+    padding: .5rem .75rem;
+    font-size: .85rem;
+    font-style: italic;
+    color: var(--color-warning-dark);
+    background-color: var(--color-warning-light);
+}
+
+form[data-disabled = true] {
+    opacity: .15;
+    user-select: none;
+
+    input:disabled { user-select: none;}
+    input[type=submit] { cursor: not-allowed; }
+}

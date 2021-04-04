@@ -1,0 +1,97 @@
+.form-control {
+    margin: .5rem 0;
+    padding: .5rem 0;
+
+    label {
+        position: relative;
+        display: block;
+        width: 100%;
+        font-weight: 700;
+
+        &[data-error=true] {
+            color: var(--color-danger);
+
+            input[type=number] {
+                border-bottom-color: var(--color-danger);
+            }
+        }
+
+        &::before {
+            position: absolute;
+            top: 2.15rem;
+            color: var(--primary-font-color);
+            font-weight: 400;
+            z-index: 1;
+        }
+
+        &[data-type=dollars] {
+            
+            input[type=number] {
+                padding-left: 1.5rem;
+            }
+
+            &::before {
+                content: '$';
+                left: .5rem;
+            }
+        }
+        
+        &[data-type=percent] {
+
+            input[type=number] {
+                padding-right: 1.5rem;
+            }
+
+            &::before {
+                content: '%';
+                right: .5rem;
+            }
+        }
+
+        .error-message {
+            font-weight: 400;
+            font-style: italic;
+        }
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        margin: .5rem 0;
+        padding: .5rem;
+        font-size: inherit;
+        border: 1px solid var(--light-font-color);
+        border-bottom: 2px solid var(--light-font-color);
+        outline: none;
+        -moz-appearance: textfield;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        &:hover, &:focus {
+            border-bottom-color: var(--color-primary);
+        }
+    }
+
+    input[type=submit] {
+        display: block;
+        width: 100%;
+        padding: .5rem;
+        border: 2px solid transparent;
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        font-size: inherit;
+        font-weight: 700;
+        border-radius: .25rem;
+        cursor: pointer;
+        outline: none;
+        transition: 250ms ease-in-out;
+
+        &:hover, &:focus {
+            background-color: var(--secondary-font-color);
+        }
+    }
+}
