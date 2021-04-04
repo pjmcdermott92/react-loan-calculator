@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React Simple Loan Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a very simple Loan Calculator built with React.
 
 ## Available Scripts
 
